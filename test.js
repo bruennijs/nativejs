@@ -16,4 +16,5 @@ function addNumeric(a, b, result)
 addNumeric(1, 2, function(result) {
     console.log(result);
     console.log(process.title)
+    console.log("mya first js script")
 })
