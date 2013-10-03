@@ -9,6 +9,7 @@
 (function () {
 
   require('./../lib/objectext');
+  console = require('console');
 
   var switchPrototype = {
 
@@ -32,6 +33,10 @@
       this.position.y = y;
     },
 
+    set_position_complex: function (val) {
+      this.position = val;
+    },
+
     get_position: function () {
       return this.position;
     },
@@ -42,6 +47,10 @@
 
     set_location: function (val) {
       this.location = val;
+    },
+
+    print: function () {
+      console.log(this.get_location() + '(' + this.get_position().x + ',' + this.get_position().y + ')');
     }
   };
 
@@ -55,6 +64,8 @@
   /* constructors */
   var Switch = function () {}
   Switch.prototype = switchPrototype;
+
+  module.exports.Switch = Switch;
 
   var TimerSwitch = function () {}
   TimerSwitch.prototype = timerSwitchPrototype;
