@@ -8,8 +8,8 @@
 
 require('./lib/objectext');
 require('./lib/functionext');
-var console = require('console');
 
+var console = require('console');
 var switches = require('./models/switch');
 var user = require('./models/user');
 
@@ -85,4 +85,8 @@ var user = require('./models/user');
   nick = 'new nick value';
 
   obj1.log_properties();
+}());
+
+(function () {
+  var o = new switches.Switch();
 }());
