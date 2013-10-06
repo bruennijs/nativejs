@@ -9,9 +9,17 @@
 require('./../lib/objectext');
 var $ = require('underscore');
 
-var userPrototype = {
+var User = function () {
+    this.id = $.random(1, 999999);
+  };
+
+User.prototype.get_id = function () {
+  return this.id;
 };
 
+module.exports.User = User;
+
+/* factory method */
 module.exports.create = function (nickName, emailVal) {
 
   var id = $.random();

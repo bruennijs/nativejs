@@ -87,6 +87,9 @@ var user = require('./models/user');
   obj1.log_properties();
 }());
 
-(function () {
-  var o = new switches.Switch();
+(function testUserCreateByPrototypeHideInstanceVariables() {
+  console.log('testUserCreateByPrototypeHideInstanceVariables');
+  var u = new user.User();
+  console.log(u.get_id());
+  //console.log(u.id());
 }());
