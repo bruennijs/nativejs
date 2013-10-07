@@ -11,22 +11,6 @@ require('./lib/functionext');
 
 var console = require('console');
 var switches = require('./models/switch');
-var user = require('./models/user');
-
-(function testPrototypePropSetter() {
-  console.log('testPrototypePropSetter');
-
-  var switch1 = switches.createSwitch();
-  var switch2 = switches.createSwitch();
-
-  console.log(switch1.get_location());
-  console.log(switch2.get_location());
-
-  switch1.set_location('new value');
-
-  console.log(switch1.get_location());
-  console.log(switch2.get_location());
-}());
 
 (function testInheritedObjectExtension() {
   var timer1 = switches.createTimerSwitch();
@@ -75,21 +59,4 @@ var user = require('./models/user');
 
 }());
 
-(function testAddUserPropsAfterCreate() {
-  var nick = 'bruenni',
-      email = 'email value';
-  var obj1 = user.create(nick, email);
 
-  obj1.log_properties();
-
-  nick = 'new nick value';
-
-  obj1.log_properties();
-}());
-
-(function testUserCreateByPrototypeHideInstanceVariables() {
-  console.log('testUserCreateByPrototypeHideInstanceVariables');
-  var u = new user.User();
-  console.log(u.get_id());
-  //console.log(u.id());
-}());
