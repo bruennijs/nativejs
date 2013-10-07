@@ -9,12 +9,12 @@ module.exports = function(config) {
 
 
     // frameworks to use
-    frameworks: ['qunit'],
+    frameworks: ['mocha'],
 
 
     // list of files / patterns to load in the browser
     files: [
-      'nativejs/test/**/*.qunit.js'
+      'nativejs/test/**/*.mocha.js'
     ],
 
 

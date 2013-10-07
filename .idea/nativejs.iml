@@ -3,6 +3,16 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/test" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-chrome-launcher" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-coffee-preprocessor" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-firefox-launcher" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-html2js-preprocessor" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-jasmine" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-phantomjs-launcher" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-qunit" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-requirejs" />
+      <excludeFolder url="file://$MODULE_DIR$/node_modules/karma-script-launcher" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
