@@ -58,8 +58,8 @@ describe('models', function () {
 //}());
 //
 //(function testUserCreateByPrototypeHideInstanceVariables() {
-//  console.log('testUserCreateByPrototypeHideInstanceVariables');
+//  c.log('testUserCreateByPrototypeHideInstanceVariables');
 //  var u = new user.User();
-//  console.log(u.get_id());
-//  //console.log(u.id());
+//  c.log(u.get_id());
+//  //c.log(u.id());
 //}());
