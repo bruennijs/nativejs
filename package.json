@@ -1,15 +1,17 @@
 {
   "name": "nativejs",
   "version": "0.1.1",
-
   "dependencies": {
-    "underscore": "~1.5",
-    "express": "~3.4.0"
+    "express": "~3.4.0",
+    "underscore": "~1.5"
   },
-
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-exec": "^2.1.1",
+    "gulp-typescript-compiler": "^1.0.1",
     "karma": "~0.10",
     "karma-mocha": ">= 0.1",
-    "mocha": ">=1.13.0"
+    "mocha": ">=1.13.0",
+    "typescript": "1.5.3"
   }
 }
