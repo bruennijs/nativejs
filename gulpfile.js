@@ -1,6 +1,8 @@
 var gulp = require('gulp');
 var console = require('console');
 var exec = require('gulp-exec');
+var gdebug = require('gulp-debug');
+var gfilemetadata = require('./js/gulp-file-metadata')
 
 gulp.task('ts', function () {
   console.info("Transpiling typescript...");
@@ -12,7 +14,9 @@ gulp.task('ts', function () {
   };
 
   gulp.src(['ts/**/*.ts'])
-      .pipe(exec('node node_modules/typescript/bin/tsc -d -t ES5 --out dist/js/<%= file.path %> <%= file.path %>', options));
+      .pipe(gfilemetadata({log: false}))
+      .pipe(gdebug({minimal: false}))
+      .pipe(exec('node node_modules/typescript/bin/tsc -d -t ES5 --out dist/js/<%= file.name %> <%= file.path %>', options));
 });
 
 gulp.task('watch', function () {
